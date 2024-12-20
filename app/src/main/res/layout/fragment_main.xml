@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    tools:context=".Fragment.MainFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Заголовок -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Эко Маркет"
+                android:textSize="24sp"
+                android:paddingLeft="150dp" />
+
+            <!-- Список категорий -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+
+>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center">
+
+                   <!-- Категория 1 -->
+                   <LinearLayout
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="8dp"
+                       android:id="@+id/category1"
+                       android:onClick="onCategoryClick"
+                       >
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:clipToPadding="false"
+                           android:clipChildren="true"
+                           >
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:cardCornerRadius="16dp"
+                               app:cardElevation="4dp">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/category1"
+                               android:scaleType="centerCrop"
+                               android:clipToOutline="true"
+                               android:background="@drawable/card_background"
+                               android:foreground="@drawable/fobackground_category"
+                               />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Фрукты"
+                               android:textColor="@android:color/white"
+                               android:textSize="20sp"
+                               android:layout_marginStart="5dp"
+                               android:layout_gravity="bottom"
+                               android:padding="8dp"/>
+                           </androidx.cardview.widget.CardView>
+                       </FrameLayout>
+                   </LinearLayout>
+
+                   <!-- Категория 2 -->
+                   <LinearLayout
+                       android:id="@+id/category2"
+                       android:onClick="onCategoryClick"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="8dp">
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:clipToPadding="false"
+                           android:clipChildren="true">
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:cardCornerRadius="16dp"
+                               app:cardElevation="4dp">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/category2"
+                               android:scaleType="centerCrop"
+                               android:clipToOutline="true"
+                               android:background="@drawable/card_background"
+                               android:foreground="@drawable/fobackground_category"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Сухофрукты"
+                               android:textColor="@android:color/white"
+                               android:textSize="20sp"
+                               android:layout_gravity="bottom"
+                               android:padding="8dp"/>
+                           </androidx.cardview.widget.CardView>
+                       </FrameLayout>
+                   </LinearLayout>
+           </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center">
+                   <LinearLayout
+                       android:id="@+id/category3"
+                       android:onClick="onCategoryClick"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="8dp">
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:clipToPadding="false"
+                           android:clipChildren="true">
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:cardCornerRadius="16dp"
+                               app:cardElevation="4dp">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/category3"
+                               android:scaleType="centerCrop"
+                               android:clipToOutline="true"
+                               android:background="@drawable/card_background"
+                               android:foreground="@drawable/fobackground_category"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Овощи"
+                               android:textColor="@android:color/white"
+                               android:textSize="20sp"
+                               android:layout_gravity="bottom"
+                               android:padding="8dp"
+                               />
+                           </androidx.cardview.widget.CardView>
+                       </FrameLayout>
+                   </LinearLayout>
+
+                   <!-- Категория 4 -->
+                   <LinearLayout
+                       android:id="@+id/category4"
+                       android:onClick="onCategoryClick"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="8dp">
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:clipToPadding="false"
+                           android:clipChildren="true">
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:cardCornerRadius="16dp"
+                               app:cardElevation="4dp">
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/category4"
+                               android:scaleType="centerCrop"
+                               android:clipToOutline="true"
+                               android:background="@drawable/card_background"
+                               android:foreground="@drawable/fobackground_category"/>
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="Зелень"
+                                   android:textColor="@android:color/white"
+                                   android:textSize="20sp"
+                                   android:layout_gravity="bottom"
+                                   android:padding="8dp"
+                                   />
+
+                           </androidx.cardview.widget.CardView>
+
+
+                       </FrameLayout>
+                   </LinearLayout>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/category5"
+                   android:onClick="onCategoryClick"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="8dp">
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:clipToPadding="false"
+                           android:clipChildren="true">
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:cardCornerRadius="16dp"
+                               app:cardElevation="4dp">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/category5"
+                               android:scaleType="centerCrop"
+                               android:clipToOutline="true"
+                               android:background="@drawable/card_background"
+                               android:foreground="@drawable/fobackground_category"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Чай кофе"
+                               android:textColor="@android:color/white"
+                               android:textSize="20sp"
+                               android:layout_gravity="bottom"
+                               android:padding="8dp"
+                               />
+                           </androidx.cardview.widget.CardView>
+                       </FrameLayout>
+                   </LinearLayout>
+
+                   <!-- Категория 4 -->
+                   <LinearLayout
+                       android:id="@+id/category6"
+                       android:onClick="onCategoryClick"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="8dp">
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:clipToPadding="false"
+                           android:clipChildren="true">
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:cardCornerRadius="16dp"
+                               app:cardElevation="4dp">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/category6"
+                               android:scaleType="centerCrop"
+                               android:clipToOutline="true"
+                               android:background="@drawable/card_background"
+                               android:foreground="@drawable/fobackground_category"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Молочные пд"
+                               android:textColor="@android:color/white"
+                               android:textSize="20sp"
+                               android:layout_gravity="bottom"
+                               android:padding="8dp"
+                               />
+                           </androidx.cardview.widget.CardView>
+                       </FrameLayout>
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>

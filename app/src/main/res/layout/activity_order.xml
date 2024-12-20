@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поля ввода -->
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер телефона"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Адрес" />
+
+    <EditText
+        android:id="@+id/landmarkEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ориентир" />
+
+    <EditText
+        android:id="@+id/commentsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Комментарии" />
+
+    <!-- Сумма заказа -->
+    <TextView
+        android:id="@+id/totalSumTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сумма заказа 340 с"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+
+    <!-- Кнопка оформления -->
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заказать доставку"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

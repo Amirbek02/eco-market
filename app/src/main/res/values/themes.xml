@@ -6,6 +6,7 @@
     </style>
 
     <style name="Theme.Ecostore" parent="Base.Theme.Ecostore" />
+
     <style name="roundedCorners" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">3%</item>
